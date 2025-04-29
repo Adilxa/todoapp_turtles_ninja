@@ -1,7 +1,7 @@
-.card{
+.card {
     background-color: #006D77;
-    width: 310px;
-    height: 120px;
+    width: 23%;
+    min-width: 310px;
     display: flex;
     justify-content: space-between;
     color: #FFDDD2;
@@ -9,41 +9,58 @@
     padding: 10px 16px;
 }
 
-.Name{
-    font-size: 19px;
-    font-weight: 600;
-    margin-bottom: 10%;
+.right {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    flex: 1;
 }
 
-.date{
-    font-size: 15px;
+.Name {
+    font-size: 21px;
+    font-weight: 700;
+    margin-bottom: 20px;
+}
+
+.date {
+    font-size: 14px;
     font-weight: 600;
-    margin-bottom: 10%;
-    span{
-        font-size: 16px;
+    margin-bottom: 10px;
+    span {
+        font-size: 15px;
+        font-weight: 400;
     }
 }
 
-.stateTask{
+.description {
+    font-size: 17px;
+    font-weight: 400;
+    margin-top: 15px;
+    span {
+        font-weight: 600;
+    }
+}
+
+.stateTask {
     display: flex;
-    justify-content: center;
-    align-items: center;
-    .mark{
+    /* align-items: center; */
+    margin-top: 15px;
+    .mark {
         width: 18px;
         margin-right: 10px;
     }
-    p{
+    .completed {
+        margin-right: 5px;
+    }
+    p {
         font-size: 15px;
         font-weight: 200;
     }
 }
 
-.left{
+.left {
     display: flex;
     flex-direction: column;
     height: 80px;
     justify-content: space-between;
-    /* img{
-        margin-bottom: 10%;
-    } */
 }

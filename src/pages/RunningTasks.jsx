@@ -5,8 +5,8 @@ import iconSrc from "../image/Header/iconSrc.svg";
 import CustomButton from '../components/CustomButton.jsx/CustomButton';
 import { useTasks } from '../context/TaskContext';
 
-const CompletedTasks = () => {
-    const { completedTasks, isLoading, deleteTask, onSetStatus } = useTasks();
+const RunningTasks = () => {
+    const { notCompletedTasks, isLoading, deleteTask, onSetStatus } = useTasks();
 
     if (isLoading) return <h1>Loading...</h1>
 
@@ -14,7 +14,7 @@ const CompletedTasks = () => {
         <>
             <div className={style.All}>
                 <div className={style.DivAll}>
-                    Completed Tasks
+                    Running Tasks
                 </div>
                 
                 <div className={style.AllTop}>
@@ -28,7 +28,7 @@ const CompletedTasks = () => {
                 </div>
 
                 <div className={style.Cards}>
-                    {completedTasks.map((task) => (
+                    {notCompletedTasks.map((task) => (
                        <Card
                             key={task.id}
                             id={task.id}
@@ -51,4 +51,4 @@ const CompletedTasks = () => {
     );
 };  
 
-export default CompletedTasks;
+export default RunningTasks;

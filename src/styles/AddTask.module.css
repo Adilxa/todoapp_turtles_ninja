@@ -1,6 +1,7 @@
 .All{
+    width: 100%;
     padding: 2%;
-    width: 80%;
+    margin: 0 auto;
 }
 
 .DivAll{

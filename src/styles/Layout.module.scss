@@ -1,11 +1,15 @@
+html, body {
+  height: 100%;
+  margin: 0;
+}
+
 .main {
   display: flex;
-  align-items: start;
+  align-items: stretch;
   gap: 1rem;
   background-color: #FFDDD2;
-  // overflow:hidden;
-  // word-wrap: break-word;
   max-width: 100%;
+  height: 100vh;
 
   aside {
     display: flex;
@@ -13,7 +17,7 @@
     gap: 1rem;
     width: 20%;
     background: #006D77;
-    height: 90vh;
     padding: 2%;
+    height: 100%;
   }
 }

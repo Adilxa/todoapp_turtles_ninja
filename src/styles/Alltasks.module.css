@@ -1,6 +1,7 @@
 .All{
     padding: 2%;
-    width: 80%;
+    margin: 0 auto;
+    width: 100%;
 }
 
 .DivAll{
@@ -72,8 +73,8 @@
     display: flex;
     flex-direction: row;
     flex-wrap: wrap;        
-    gap: 68px;             
-    justify-content: flex-start; 
+    gap: 30px; 
+    justify-content: flex-start;
   }
 
   .buttonn{

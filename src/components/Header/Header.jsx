@@ -5,14 +5,16 @@ import iconSrc from "../../image/Header/iconSrc.svg"
 import bell from "../../image/Header/bell.svg"
 import moon from "../../image/Header/moon.svg"
 import man from "../../image/Header/man.svg"
+import { useLayout } from '../../context/LayoutContext';
 
 const Header = () => {
 
     const [value, setValue] = React.useState("");
+    const { toggleAside } = useLayout();
 
     return (
         <header className={style.header}>
-            <div className={'burger'}>
+            <div onClick={toggleAside} className={'burger'}>
                 <img src={burg} alt="" />
             </div>
 
@@ -25,8 +27,7 @@ const Header = () => {
                 />
                 <img src={iconSrc} alt="search" className={style.searchIcon} />
             </div>
-
-            {/* <input value={value} onChange={(e) => setValue(e.target.value)} /> */}
+            
             <nav className={style.NavBar}>
                 <div><img src={bell} alt="" /></div>
                 <div><img src={moon} alt="" /></div>
